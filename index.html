@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERCETAKAN MONAS MEDIA</title>
+    <link rel="icon" href="img/icon.png" type="image/monaslogo-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Katalog</a></li>
+                <li><a href="https://wa.me/+6285787030614">Hubungi Kami</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Monas Media<br><span>Percetakan dan Sablon Kaos</span></h2>
+                <p>Melayani Aneka kebutuhan Cetak, Sablon Kaos, Jersey, Kemasan Produk, serta Merchandising</p>
+                <a href="catalog.html">CEK KATALOG DISINI</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/mix.png" class="Click">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="https://wa.me/+6281250471772"><img src="img/wa.png"></a></li>
+            <li><a href="https://www.instagram.com/monasmedia21?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/instagram.png"></a></li>
+            <li><a href="https://www.tiktok.com/@monasmedia21?is_from_webapp=1&sender_device=pc"><img src="img/tiktok.png"></a></li>
+            <li><a href="https://www.facebook.com/media.monas"><img src="img/fb.png"></a></li>
+        </ul>
+        <ul class="sci2">
+            <li><a href="index.html"><img src="img/back.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Click').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation')
+            menuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
